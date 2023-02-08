@@ -1,165 +1,71 @@
-* {
-    overflow: auto;
-}
-h1 {
-    text-align: center;
-}
-div.categorie{
-    text-align: center;
-    margin-top: -60px;
-    font-weight: bold;
-}
-p.categorie {
-    background-color: black;
-    color : white;
-    display: inline-block;
-    padding: 8px 18px;
-}
-p.description{
-    text-align: center;
-    max-width: 500px;
-    display: inline-block;
-    font-size: 14px;
-}
-div.description {
-    text-align: center;
-}
-div.contenu {
-    background-color: white;
-    margin: 40px 8px 40px 8px;
-    padding: 0px 8px 20px 8px;
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
-    overflow: visible;
-}
-.center {
-    text-align: center;
-    width: 100%;
-}
-body {
-     background-color: #8BA1BB;
-     font-family: Arial;
-}
-div.separator{
-    background-color: black;
-    height: 1px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-div.info { 
-    position:  relative;
-    background-color: blue;
-}
-table.info{
-    background-color: #6C8290C0;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-table.info td {
-    text-align: center;
-    font-size: 12px;
-    vertical-align: top;
-}
-table.info th {
-    font-size: 14px;
-    vertical-align: bottom;
-    padding: 10px;
-}
-img.info{
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    max-height: 400px;
-    min-height: 200px;
-}
-div.colonne {
-    width: 100%;
-    margin-top: 20px;
-}
-div.colonne h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 15px; 
-    border-bottom: 10px solid #6C8290;
-    padding-bottom: 5px;
-    margin-bottom: 8px;
-}
-div.colonne1 { 
-    display: inline-block;
-}
-div.domaine p {
-    font-size: 14px;
-    border: 1px solid lightblue;
-    text-align: center;
-    padding: 8px 0;
-    margin-top: 4px;
-    margin-bottom: 0px;
-}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Astuce</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!--"8BA1BB "-->
+        <div class="contenu">
+            <div class="categorie">
+                <p class="categorie">Astuce</p>
+            </div>
+            <h1>Le monde Informatique</h1>
+            
+            <div class="separator"></div>
 
-table.outils p.numero{
-    background-color: #6C8290;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    padding-top: 4px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin: 0;
-}  
+            <div class="description">
+                <p class="description"> L'informatique est un domaine d'activité scientifique, technique, et industriel concernant le traitement automatique de l'information numérique </p>
+            </div>
+            
+            <div class="info">
+                <img class="center info" src="https://jonathanroux.com/gateau.jpg">
 
-table.outils td.outils-etape{ 
-    padding-left: 10px; 
-    font-size: 14px;
-    padding-bottom: 10px;
-}
-
-table.outils tr { 
-    height: 40px;
-}
-
-div.colonne {
-    overflow: auto;
-}
-
-@media only screen and (min-width: 768px) {
-    div.contenu {
-      margin: 60px 10% 60px 10%;
-      padding: 30px;
-      min-width: 350px;
-    }
-
-    table.info{
-        height: 80px;
-    }
-    table.info td {
-        font-size: 14px;
-    }
-    table.info th {
-        font-size: 14px;
-    }
-    div.colonne {
-        width: 45%;
-        margin-top: 20px;
-    }
-    div.colonne1 { 
-        display: inline-block;
-    }
-    div.colonne2 {
-        float: right;
-    }
-  }
-
-  @media only screen and (min-width: 900px) {
-    div.contenu{
-        margin-left: auto;
-        margin-right: auto;
-        width: 645px;
-    }
-
-  }
+                <table class="info">
+                    <tr>
+                        <th>Difficulté</th>
+                        <th>Domaine</th>
+                        <th>Apprentissage</th>
+                        <th>Prix</th>
+                    </tr>
+                    <tr>
+                        <td>Moyenne</td>
+                        <td>HTML/CSS</td>
+                        <td>Une semaine</td>
+                        <td>5000 FCFA</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="colonnes">
+                <div class="colonne1 colonne">
+                    <h2>Les domaines</h2>
+                    <div class="domaine">
+                        <p >Intelligence Artificielle</p> 
+                        <p>Base de donnée</p>
+                        <p>Algorithme</p>
+                        <p>Mathematiques</p>
+                        <p>UI Design</p>
+                    </div>
+                </div>
+                
+                <div class="colonne2 colonne">
+                    <h2>Les outils</h2>
+                    <table class="outils">
+                        <tr><td><p class="numero">1</p> </td><td class="outils-etape">IA c'est python le mieux placé</td>
+                        </tr>
+                        <tr><td><p class="numero">2</p></td><td class="outils-etape">Pour les BD MySql</td>
+                        </tr> 
+                        <tr><td><p class="numero">3</p></td><td class="outils-etape">AlgoBox un logiciel d'apprentissage</td>
+                        </tr> 
+                        <tr><td><p class="numero">4</p></td><td class="outils-etape">Site scientifique</td>
+                        </tr> 
+                        <tr><td><p class="numero">5</p></td><td class="outils-etape">Adobe XD</td>
+                        </tr>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
